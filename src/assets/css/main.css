@@ -1188,6 +1188,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
+		pointer-events: none;
 		display: flex;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
@@ -1205,7 +1206,7 @@ input, select, textarea {
 		min-height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
-		z-index: 3;
+		z-index: 1;
 	}
 
 		#wrapper:before {

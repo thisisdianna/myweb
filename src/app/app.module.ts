@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppUiModule } from './app-ui.module';
 import { HeaderComponent } from './header/header.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeaderComponent } from './header/header.component';
     ContactComponent,
     ResumeComponent,
     AboutComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: 'app-sidenav',
+  templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.css']
 })
-export class MenuComponent implements OnInit {
+export class SidenavComponent implements OnInit {
 
   constructor() { }
-  
-
   public isMenuOpen: boolean = false;
+
+  getMenuValue(){
+    return this.isMenuOpen;
+  }
 
   public onSidenavClick(): void {
     this.isMenuOpen = false;
   }
-  
-  
+
 
   ngOnInit(): void {
   }
