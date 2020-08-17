@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';  
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,6 +13,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { JounralComponent } from './jounral/jounral.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ConfigService } from './config.service';
+import { JmtBlogComponent } from './jmt-blog/jmt-blog.component';
 
 
 @NgModule({
@@ -27,16 +28,16 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     HeaderComponent,
     SidenavComponent,
     JounralComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    JmtBlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppUiModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
+    AppUiModule
+    ],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

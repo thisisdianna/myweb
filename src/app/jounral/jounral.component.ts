@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-jounral',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JounralComponent implements OnInit {
 
-  constructor() { }
+  blog = {};
 
+
+  constructor(private congif: ConfigService, private route: Router) { }
+
+
+  public btnClick(): void {
+    this.route.navigate(['/jmt']);
+  }
   ngOnInit(): void {
+
+  
+  }
+
+  getBlog(){
+    return this.congif.getConfig().blog;
   }
 
 }

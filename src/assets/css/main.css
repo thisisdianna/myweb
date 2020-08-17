@@ -1508,6 +1508,8 @@ input, select, textarea {
 
 	#main {
 		-moz-flex-grow: 1;
+		/* pointer-events: none; */
+
 		-webkit-flex-grow: 1;
 		-ms-flex-grow: 1;
 		flex-grow: 1;
@@ -1533,7 +1535,7 @@ input, select, textarea {
 		flex-direction: column;
 		position: relative;
 		max-width: 100%;
-		z-index: 3;
+		z-index: 5;
 	}
 
 		#main article {
