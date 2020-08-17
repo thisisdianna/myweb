@@ -3,7 +3,7 @@ div{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    /* pointer-events: none; */
+    pointer-events: none;
 
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
@@ -51,6 +51,7 @@ div{
 }
 
 .jmt-button{
+    pointer-events: fill;
 
     align-items: center;
     text-align: center;
