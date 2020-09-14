@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jmt-blog',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JmtBlogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private congif: ConfigService, private route: Router) { }
+
+  public btnClick(): void {
+    this.route.navigate(['/day1']);
+  }
 
   ngOnInit(): void {
+  }
+
+  getBlog(){
+    return this.congif.getConfig().blog;
   }
 
 }

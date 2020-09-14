@@ -311,6 +311,8 @@ input, select, textarea {
 		}
 
 		form > .fields {
+			pointer-events: fill;
+
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -733,6 +735,8 @@ input, select, textarea {
 		}
 
 	ul {
+		pointer-events: fill;
+
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
@@ -896,6 +900,8 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
+		pointer-events: fill;
+
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
@@ -1203,9 +1209,10 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		position: relative;
-		min-height: 100vh;
+		min-height: 50%;
 		width: 100%;
-		padding: 4rem 2rem;
+		/* padding: 1rem 1rem; */
+		padding-top: 1em;
 		z-index: 1;
 	}
 
@@ -1217,6 +1224,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#wrapper {
+				
 				padding: 3rem 2rem;
 			}
 
@@ -1225,6 +1233,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
+				
 				padding: 2rem 1rem;
 			}
 
@@ -1233,6 +1242,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#wrapper {
+				
 				padding: 1rem;
 			}
 
@@ -1241,6 +1251,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
+		
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1263,6 +1274,8 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
+		
+		
 	}
 
 		#header > * {
