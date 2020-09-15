@@ -1,6 +1,6 @@
 # Myweb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+A work in progress blog built using Angular and MongoDB. 
 
 ## Development server
 
