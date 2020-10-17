@@ -1,6 +1,6 @@
 # Myweb
 
-A work in progress blog built using Angular and MongoDB. 
+A work in progress blog built using Angular and Spring.
 
 ## Development server
 
