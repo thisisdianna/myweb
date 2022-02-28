@@ -1,7 +1,7 @@
 export const configuration = {
     about: {
         description: 'I am a first generation American, the daughter of immigrants who instilled in me the values of hard work and resilience.',
-        description2: 'Nature and technology seem like two dichotomous worlds, yet these are the things I am most passionate about and I have only continued to find that they complement each other perfectly. My outdoors gear and my machine are each extensions of me. I use my software engineering skills to solve problems and my thrill for adventure to carry me over mountains.',
+        description2: 'Nature and technology are the things I am most passionate about and I have only continued to find that they complement each other perfectly. My gear and my machine are each extensions of me. I use my software engineering skills to solve problems and my thrill for adventure to carry me over mountains.',
         description3: 'The outside quiets me and allows me to find rest outside a very noisy world. It transpires new ideas and solutions that make me eager to implement through compiled code.',
         description4: 'Thank you for being here.'
     
