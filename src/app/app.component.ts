@@ -12,4 +12,6 @@ export class AppComponent {
   public isMenuOpen: boolean = false;
 
   title = 'myweb';
+  src = "../../assets/resume/resume.pdf"
+
 }

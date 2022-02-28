@@ -14,11 +14,16 @@ import { AppUiModule } from './app-ui.module';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { JounralComponent } from './jounral/jounral.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ConfigService } from './config.service';
 import { JmtBlogComponent } from './jmt-blog/jmt-blog.component';
 import { DayOneComponent } from './day-one/day-one.component';
+import { JournalModule } from './jounral/journal.module'
 import { ShowPostComponent } from './show-post/show-post.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from "@angular/material/input";
+import { ContactDialogComponent } from './contact-dialog/contact-dialog/contact-dialog.component';
 
 
 @NgModule({
@@ -31,18 +36,24 @@ import { ShowPostComponent } from './show-post/show-post.component';
     AboutComponent,
     HeaderComponent,
     SidenavComponent,
-    JounralComponent,
-    ContactFormComponent,
-    JmtBlogComponent,
-    DayOneComponent,
-    ShowPostComponent
+    //JounralComponent,
+    // JmtBlogComponent,
+    // DayOneComponent,
+    ShowPostComponent,
+    ContactDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    JournalModule,
     BrowserAnimationsModule,
     AppUiModule,
-    HttpClientModule
+    HttpClientModule,
+    PdfViewerModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
+
     ],
   providers: [ConfigService],
   bootstrap: [AppComponent]

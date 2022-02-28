@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
+  src = "../../assets/resume/resume.pdf"
   constructor() { }
 
   ngOnInit(): void {

@@ -3,12 +3,17 @@
         <article id="about">
             <h2 class="major">Journal</h2>
             <span class="image main"><img src="../../assets/images/ritter.jpeg" alt="" /></span>
-            <button mat-button class="jmt-button" (click)="btnClick()">
+            <button mat-button class="jmt-button" *ngIf="!isJMT" (click)="btnClick('jmt')">
                 John Muir Trail
+             </button>  
+             <button mat-button class="jmt-button" *ngIf="isJMT" (click)="btnClick('day1')">
+                DAY 1
              </button>
-         </article>
+            </article>
     </div>
 </div>
+
+
 
 <!-- <div id="main">
     <article id="about">

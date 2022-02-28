@@ -14,9 +14,10 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'work', component: ResumeComponent},
-  {path: 'journal', component: JounralComponent},
-  {path: 'jmt', component: JmtBlogComponent},
-  {path: 'day1', component: DayOneComponent},
+  {path: 'journal', 
+   loadChildren: './jounral/journal.module#JournalModule'},
+  //{path: 'journal/jmt', component: JounralComponent},
+ // {path: 'journal/jmt/day1', component: JounralComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];

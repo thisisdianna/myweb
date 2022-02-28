@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from '../config.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -11,14 +11,10 @@ import { Router } from '@angular/router';
 export class JounralComponent implements OnInit {
 
   blog = {};
+  isJMT:boolean = false;
 
+  constructor(private congif: ConfigService, private router: Router, private route: ActivatedRoute) { }
 
-  constructor(private congif: ConfigService, private route: Router) { }
-
-
-  public btnClick(): void {
-    this.route.navigate(['/jmt']);
-  }
   ngOnInit(): void {
 
   
@@ -26,6 +22,17 @@ export class JounralComponent implements OnInit {
 
   getBlog(){
     return this.congif.getConfig().blog;
+  }
+
+  public btnClick(type: any): void {
+    if(type == "jmt"){
+      //this.router.navigate(['jmt'], {relativeTo: this.route});
+      this.isJMT = true;
+    }
+    if(type == "day1"){
+      this.router.navigate(['jmt/day',1], {relativeTo: this.route});
+    }
+    
   }
 
 }
