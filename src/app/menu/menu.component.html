@@ -1,6 +1,6 @@
 
       <div>
-        <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <button mat-button class="menu-button" style="position: relative; z-index: 3"(click)="sidenav.toggle()">
             <mat-icon>{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
           </button>
     
@@ -12,7 +12,7 @@
 
 
 
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container style="z-index: 2"class="sidenav-container">
     <mat-sidenav #sidenav autoFocus="false"
      mode="side" [(opened)]="isMenuOpen" 
      class="sidenav"
@@ -22,6 +22,7 @@
         <a mat-button routerLink="/work">Work</a>
         <a mat-button routerLink="/journal">Journal</a>
         <a mat-button routerLink="/contact">Contact</a>
+        <a mat-button routerLink="/contact">Shop</a>
     </div>
       
     

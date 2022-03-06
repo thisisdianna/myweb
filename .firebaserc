@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "personal-website-a9ebe": {
+      "hosting": {
+        "myweb": [
+          "personal-website-a9ebe"
+        ]
+      }
+    }
+  }
+}

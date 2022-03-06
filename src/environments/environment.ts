@@ -4,9 +4,19 @@
 
 export const environment = {
   production: false,
-  environmentName: 'Development',
-  url: 'https://diannagomez.com'
+  firebase: {
+    apiKey: "AIzaSyBfO7hbIRvP8Sz04qkZ-l-UeLgZZwlfVWI",
+    authDomain: "personal-website-a9ebe.firebaseapp.com",
+    projectId: "personal-website-a9ebe",
+    storageBucket: "personal-website-a9ebe.appspot.com",
+    messagingSenderId: "852099393132",
+    appId: "1:852099393132:web:7b7ff63f2646de15f81a49",
+    measurementId: "G-P2W7MF7934"
+  }
 };
+
+// Initialize Firebase
+
 
 /*
  * For easier debugging in development mode, you can import the following file
